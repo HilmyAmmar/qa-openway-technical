@@ -30,7 +30,7 @@ Before executing the tests, you must configure the login credentials directly in
 
 2. Locate the PLACEHOLDERDS section at the top of the class:
 ```java
-private static final String EMAIL = "your_email_here";
+private static final String EMAIL = "your_email_here@gmail.com";
 private static final String PASSWORD = "your_password_here";
 ```
 
