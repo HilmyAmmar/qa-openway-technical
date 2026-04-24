@@ -1,6 +1,7 @@
 # QA Automation Test - Periplus Shopping Cart
 
 This repository contains the automated test script and manual test documentation for the Periplus Shopping Cart functionality, developed as part of the technical assessment for OpenWay Group.
+Github Link: https://github.com/HilmyAmmar/qa-openway-technical
 
 ## Tech Stack
 * **Language:** Java 17
