@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
 public class PeriplusCartTest {
 
     // --- PERIPLUS CREDENTIALS ---
-    private static final String EMAIL = "your_email_here@gmail.com";
-    private static final String PASSWORD = "your_password_here";
+    private static final String EMAIL = "your-email-here@gmail.com";
+    private static final String PASSWORD = "your-password-here";
 
     WebDriver driver;
     WebDriverWait wait;
@@ -26,12 +26,17 @@ public class PeriplusCartTest {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.manage().window().maximize();
-        driver.get("https://www.periplus.com/account/Login");
+        driver.get("https://www.periplus.com/");
     }
 
     @Test
     public void testAddToCartMortalEngines() throws InterruptedException {
-        // Step 1: Login
+        // Step 1: Navigate to Login Page & Authenticate
+        WebElement signInLink = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//span[@id='nav-signin-text']/a")
+        ));
+        signInLink.click();
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("email")))
             .sendKeys(EMAIL); 
         driver.findElement(By.id("ps")).sendKeys(PASSWORD);
