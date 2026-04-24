@@ -60,6 +60,6 @@ Ensure you have the following installed before running the tests:
 mvn clean test
 ```
 
-5. The automation will: The automation process begins by launching a Chrome instance and navigating to the Periplus login page to authenticate using registered test credentials. Upon successful login, the script executes a search for "Mortal Engines," identifies the first available result, and utilizes a JavaScript-based click to add the product to the cart, effectively bypassing any potential UI interceptions. Once the cart counter is confirmed to have updated, the system performs a direct navigation to the checkout page to verify that the product is present and correctly displayed within the cart summary.
+5. The automation process begins by launching a Chrome instance and navigating to the Periplus login page to authenticate using registered test credentials. Upon successful login, the script executes a search for "Mortal Engines," identifies the first available result, and utilizes a JavaScript-based click to add the product to the cart, effectively bypassing any potential UI interceptions. Once the cart counter is confirmed to have updated, the system performs a direct navigation to the checkout page to verify that the product is present and correctly displayed within the cart summary.
 
 6. Execution results will be displayed directly in the terminal
