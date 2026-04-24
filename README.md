@@ -28,7 +28,7 @@ Before executing the tests, you must configure the login credentials directly in
 
 1. Open `src/test/java/PeriplusCartTest.java`.
 
-2. Locate the PLACEHOLDERDS section at the top of the class:
+2. Locate the PLACEHOLDERS section at the top of the class:
 ```java
 private static final String EMAIL = "your_email_here@gmail.com";
 private static final String PASSWORD = "your_password_here";
@@ -50,7 +50,7 @@ Ensure you have the following installed before running the tests:
 
 ## How to Run the Tests
 
-1. Extrsct this repository to your local machine
+1. Extract this repository to your local machine
 
 2. Open your Terminal or Command Prompt
 
@@ -61,6 +61,16 @@ Ensure you have the following installed before running the tests:
 mvn clean test
 ```
 
-5. The automation process begins by launching a Chrome instance and navigating to the Periplus homepage. It then locates and clicks the "Sign In" button to access the login page and authenticates using registered test credentials. Upon successful login, the script executes a search for "Mortal Engines," identifies the first available result, and utilizes a JavaScript-based click to add the product to the cart, effectively bypassing any potential UI interceptions. Once the cart counter is confirmed to have updated, the system performs a direct navigation to the checkout page to verify that the product is present and correctly displayed within the cart summary.
+5. The script will automatically execute the following workflow:
+
+- Launch a Chrome instance and navigate to Periplus.
+
+- Authenticate using the provided credentials.
+
+- Search for the product "Mortal Engines".
+
+- Add the first search result to the cart via JS click execution.
+
+- Verify the cart counter update and navigate to checkout for final validation.
 
 6. Execution results will be displayed directly in the terminal
