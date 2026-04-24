@@ -11,7 +11,6 @@ This repository contains the automated test script and manual test documentation
 
 ## Repository Structure
 ```text
-```text
 .
 ├── src/test/java/
 │   └── PeriplusCartTest.java    # The automated Selenium test script
