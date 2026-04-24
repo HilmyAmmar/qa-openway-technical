@@ -1,0 +1,14 @@
+target/
+.settings/
+.project
+.classpath
+.factorypath
+.idea/
+*.iml
+*.iws
+*.log
+.DS_Store
+Thumbs.db
+*.exe
+chromedriver
+geckodriver
